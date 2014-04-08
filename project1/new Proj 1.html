@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function changeImage()
+{
+element = document.getElementById("myimage");
+if (element.src.match("ash3"))
+  {
+  element.src = "https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash4/t1.0-9/10153007_10201666166553796_8135334338701050703_n.jpg";
+  }
+else
+  {element.src = "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/t1.0-9/10154940_10201666166513795_4028083557424100072_n.jpg";
+  }
+}
+</script>
+
+<img id="myimage" onclick="changeImage()"
+src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash4/t1.0-9/10153007_10201666166553796_8135334338701050703_n.jpg" width="600" height="400">
+
+<p>Click to open the eyes.</p>
+</body>
+</html>
