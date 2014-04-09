@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+tr{text-align:center;}
+</style>
+</head>
+<body>
+
+<h1>FINAL RESULT OF THE EXAMS<br>of the Studennts from Senatos Renato Companero Cayetano Memorial Science ad Technology High School</h2>
+<table border="2" style="width:300px">
+<br><br>
+<tr>
+  <td>Arthur Paul</td>
+  <td>87</td>
+  <td>PASSED<td>
+</tr>
+
+<tr>
+  <td>Mario Jose</td>
+  <td>92</td>
+  <td>PASSED<td>
+</tr>
+
+<tr>
+  <td>Jamie Beatriz</td>
+  <td>84</td>
+  <td>FAILED<td>
+</tr>
+
+<tr>
+  <td>Robert Martin</td>
+  <td>80</td>
+  <td>FAILED<td>
+</tr>
+
+<tr>
+  <td>Lucifer Antonio</td>
+  <td>98</td>
+  <td>PASSED<td>
+</tr>
+
+</table>
+
+
+<div id="hi"> <button onclick="myFunction()">Passed</button> <br> </div>
+
+<div id="ange"></div>
+</body>
+
+
+<script>
+function myFunction() {
+document.getElementById("ange").innerHTML=getVerdict();
+}
+
+function getVerdict() {
+  var verdict="boom";
+  var students = new Array();
+  students[0] = {fname:"Arthur Paula", grade:87, verdict:"PASSED"};
+  students[1] = {fname:"Mario Jose", grade:92, verdict:"PASSED"};
+  students[2] = {fname:"Jamie Beatriz", grade:84, verdict:"FAILED"};
+  students[3] = {fname:"Robert Martin", grade:80, verdict:"FAILED"};
+  students[4] = {fname:"Lucifer Antonio", grade:98, verdict:"PASSED"};
+
+  for (var i=0;i<students.length;i++) {
+    document.write(students[i].fname +" " + students[i].grade +" " + students[i].verdict + "<br>");
+  }
+  return verdict;
+}
+</script>
+
+</html>
