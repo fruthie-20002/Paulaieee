@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+<input id="first box" type="number">
+<button onclick="getTotal()">+</button>
+<button onclick="getDifference()">-</button>
+<button onclick="getProduct()">*</button>
+<button onclick="getQuotient()">/</button>
+<input id="second box" type="number"><br><br>
+<input id="answer box" type="number">
+
+</body>
+
+<script>
+  
+function getTotal() {
+var a = document.getElementById("first box").value;
+var y = document.getElementById("second box").value;
+a = new Number(a);
+y = new Number(y);
+document.getElementById("answer box").value = a+y;
+}
+
+function getDifference() {
+var x = document.getElementById("first box").value;
+var y = document.getElementById("second box").value;
+document.getElementById("answer box").value = x-y;
+}
+
+function getProduct() {
+var x = document.getElementById("first box").value;
+var y = document.getElementById("second box").value;
+document.getElementById("answer box").value = x*y;
+}
+
+function getQuotient() {
+var x = document.getElementById("first box").value;
+var y = document.getElementById("second box").value;
+document.getElementById("answer box").value = x/y;
+}
+</script>
+</html>
